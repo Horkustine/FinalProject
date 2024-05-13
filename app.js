@@ -69,6 +69,9 @@ function checkAnswer(selectedOption) {
         }, 1500);
     } else {
         resultElement.innerText = "Incorrect!";
+        setTimeout(() => {
+            resultElement.innerText = "";
+        }, 1500);
         checkAnswer(selectedOption)
 
     }
